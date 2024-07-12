@@ -1,6 +1,8 @@
 //import Ui from "./displayProducts.mjs";
 import Products from "./getproducts.mjs";
 import Storage from "./localStorage.mjs";
+import './header.js';
+import './footer.js';
 
 //variables
 const cartBtn = document.querySelector(".cart-btn");
