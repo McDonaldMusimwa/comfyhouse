@@ -260,7 +260,7 @@ BannerBtn.addEventListener("click", () => {
 /* pick up pointsa */
 const route = window.location.pathname;
 
-if (route == '/pickup-point.html') {
+if (route == '/comfyhouse/pickup-point.html') {
   async function renderPickUpPoints() {
 
     try {
@@ -279,7 +279,8 @@ if (route == '/pickup-point.html') {
 /* About us */
 const routeabout = window.location.pathname;
 
-if (route == '/aboutus.html') {
+
+if (routeabout == '/comfyhouse/aboutus.html') {
   async function renderAboutUs() {
 
     try {
