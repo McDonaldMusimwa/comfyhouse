@@ -203,14 +203,14 @@ headerTemplate.innerHTML =
             <a
               class="nav_link"
               href="pickup-point.html"
-              target="_blank"
+              
               >Pickup Points</a
             >
           </li>
           <li class="nav_item">
             <a
               href="aboutus.html"
-              target="_blank"
+             
               class="nav_link"
               >About Us</a
             >

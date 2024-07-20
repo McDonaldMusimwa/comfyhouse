@@ -48,7 +48,7 @@ body {
 .navbar-center {
   width: 90%;
   max-width: 1170px;
- 
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +85,7 @@ body {
 }
 
 .banner {
-width: 300px;
+  width: 300px;
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
@@ -316,27 +316,36 @@ width: 300px;
   padding: 16px;
   margin: 16px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .card-img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
+
 .card-content {
   text-align: center;
-  margin:1rem 0;
+  margin: 1rem 0;
 }
+
 /*about us*/
-.about:nth-child(2){
-  display: none;
+.about {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: none;
 
 }
-.about>img{
+
+.about>img {
   height: 300px;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* FORM */
@@ -348,14 +357,17 @@ width: 300px;
   letter-spacing: var(--mainSpacing);
 }
 
-#more {display: none;}
-#ModalArea{
+#more {
+  display: none;
+}
+
+#ModalArea {
   border: solid 1px;
   background-color: var(--background);
   width: 80vw;
   max-width: 80%;
   min-width: 50%;
-  margin: 5% ;
+  margin: 5%;
   padding: 1em;
 
 
@@ -367,18 +379,20 @@ form {
 
   border: solid 1px;
   background-color: var(--background);
-  width: 60vw;
-  max-width: 80%;
+  width: 80vw;
+  max-width: 100%;
   min-width: 50%;
-  margin: 5% ;
+  margin: 5%;
   padding: 1em;
-align-items: center;
- 
+  align-items: center;
+
 }
+
 fieldset {
   border: none;
   padding: 2rem 0;
 }
+
 input,
 textarea,
 select {
@@ -386,25 +400,30 @@ select {
   width: 100%;
   min-height: 1.5em;
 }
+
 input,
 textarea {
   background-color: white;
   border: 1px solid white;
   color: black;
 }
+
 input,
 select {
   border-radius: 3px;
   border: 1px black solid;
 }
+
 .inline {
   width: unset;
   vertical-align: middle;
   margin: 0 0.5em 0 0;
 }
-label{
+
+label {
   text-align: left;
 }
+
 input[type="submit"] {
   min-width: 100px;
   max-width: 300px;
@@ -413,5 +432,5 @@ input[type="submit"] {
   margin: 1em auto;
   height: 2em;
   font-size: 1.1em;
-  background-color:var(--primaryColor);
+  background-color: var(--primaryColor);
 }
