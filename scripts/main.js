@@ -5,6 +5,7 @@ import './header.js';
 import './footer.js';
 import { pickUpPoints } from "./pickuppoint.js";
 import { aboutUs } from "./aboutus.js";
+import { joinSubmission } from "./FormSubmission.js";
 
 //variables
 const cartBtn = document.querySelector(".cart-btn");
@@ -296,4 +297,12 @@ if (routeabout == '/comfyhouse/aboutus.html') {
   renderAboutUs()
 }
 
+/* form submission*/
 
+let formdata = document.getElementById("join-form");
+if (formdata) {
+  formdata.addEventListener("submit", (event) => {
+    event.preventDefault();
+    joinSubmission();
+  });
+}

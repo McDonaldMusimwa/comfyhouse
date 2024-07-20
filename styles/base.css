@@ -125,7 +125,7 @@ width: 300px;
 
 .section-title h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 5rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
@@ -177,6 +177,7 @@ width: 300px;
   display: block;
   width: 100%;
   min-height: 12rem;
+  object-fit: cover;
   transition: var(--mainTransition);
 }
 
@@ -336,4 +337,81 @@ width: 300px;
 }
 .about>img{
   height: 300px;
+}
+
+/* FORM */
+#join-form>h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+#more {display: none;}
+#ModalArea{
+  border: solid 1px;
+  background-color: var(--background);
+  width: 80vw;
+  max-width: 80%;
+  min-width: 50%;
+  margin: 5% ;
+  padding: 1em;
+
+
+}
+
+
+
+form {
+
+  border: solid 1px;
+  background-color: var(--background);
+  width: 60vw;
+  max-width: 80%;
+  min-width: 50%;
+  margin: 5% ;
+  padding: 1em;
+align-items: center;
+ 
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 1.5em;
+}
+input,
+textarea {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+input,
+select {
+  border-radius: 3px;
+  border: 1px black solid;
+}
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+}
+label{
+  text-align: left;
+}
+input[type="submit"] {
+  min-width: 100px;
+  max-width: 300px;
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1em;
+  background-color:var(--primaryColor);
 }

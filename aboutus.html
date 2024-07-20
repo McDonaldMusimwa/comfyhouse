@@ -25,7 +25,7 @@
 
     <link rel="icon" href="images/logo.svg" type="image/x-icon" />
     
-    <title>Fashionava</title>
+    <title>Comfy House</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/large.css"/>
     <link
@@ -82,7 +82,56 @@
         </div>
       </div>
     </div>
-
+    
+    <form id="join-form" action="thankyou.html"  autocomplete="on">
+      <h2>Contact Us</h2>
+      <fieldset>
+        <label id="name-label">First Name <input id="firstname" type="text" title="Please enter firstname" name="firstname" placeholder="Enter your firstname" autocomplete="given-name" required/></label>
+        <label id="name-label">Last Name <input id="lastname" type="text" tabindex="Please enter lastname" name="lastname" placeholder="Enter your lastname" autocomplete="family-name" required/></label>
+        <label id="name-organization-title">Organational Title   <input 
+          placeholder="Enter Organizational title"
+          type="text" 
+          id="organization-title" 
+          name="organization-title" 
+          autocomplete="organization-title" 
+     
+          title="Please enter a valid organizational title with at least seven characters. Only alphabetic characters, hyphens, and spaces are allowed."
+          required
+      ></label>
+        <label id="email-label">Email <input id="email" type="email" name="email" title="Please enter email" placeholder="Enter your Email" required  autocomplete="email"/></label>
+        <label id="number-label">Phone <input id="phone" type="telephone" name="phone"
+        placeholder="Enter Phone number"
+        required autocomplete="mobile"/></label>
+        
+        <label id="organizationname">Name of Organization <input id="organization" type="text" name="organization" title="Please enter or organization name" placeholder="Enter organization name" autocomplete="organization"/></label>
+        
+      </fieldset>
+  
+        <fieldset>
+          <label for="organization-description">Organization Description:</label><br>
+          <textarea 
+              id="organizationdescription" 
+              name="organization-description" 
+              rows="4" 
+              cols="50" 
+              placeholder="Enter business/organization description here..."
+              required
+          ></textarea><br><br>
+          
+        
+          <input 
+              type="hidden" 
+              id="timestamp" 
+              name="timestamp" 
+              value=""
+          ><br><br>
+          
+          <input 
+          id="submitBtn"
+              type="submit" 
+              value="Contact Us"
+          >
+     </form>
     <footer-component></footer-component>
   </body>
 </html>
