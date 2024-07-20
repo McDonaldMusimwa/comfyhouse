@@ -11,7 +11,7 @@ async function joinSubmission() {
 
   const organisationdescription =
     document.getElementById("organizationdescription").value || "";
-  let timestamp = document.getElementById("timestamp").value || "";
+  let timestamp = document.getElementsByName("timestamp").value || "";
   timestamp = new Date().toISOString();
 
   const user = {
@@ -25,7 +25,7 @@ async function joinSubmission() {
     organisationdescription: organisationdescription,
     timestamp: timestamp,
   };
-
+console.log(timestamp)
   localStorage.setItem("userData", JSON.stringify(user));
  
   window.location.href = `thankyou.html`;

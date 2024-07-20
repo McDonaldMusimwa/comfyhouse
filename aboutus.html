@@ -1,137 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Comfy House" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.example.com/image.jpg" />
-    <meta property="og:url" content="https://www.example.com/page-url" />
- 
-    <meta
-      name="description"
-      content="Comfy House is a convinent online store that catters to geeks and fashionovas"
-    />
 
-    <meta property="og:site_name" content="Comfy House" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="author" content="McDonald Musimwa" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Comfy House" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.example.com/image.jpg" />
+  <meta property="og:url" content="https://www.example.com/page-url" />
 
-    <link
-    as="style"
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
+  <meta name="description" content="Comfy House is a convinent online store that catters to geeks and fashionovas" />
 
-    <link rel="icon" href="images/logo.svg" type="image/x-icon" />
-    
-    <title>Comfy House</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/large.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <script src="scripts/main.js" type="module"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-center">
-        <span class="nav-icon">
-          <header-component></header-component>
+  <meta property="og:site_name" content="Comfy House" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="author" content="McDonald Musimwa" />
+
+  <link as="style" rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+
+  <link rel="icon" href="images/logo.svg" type="image/x-icon" />
+
+  <title>Comfy House</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <header-component></header-component>
+      </span>
+      <img id="logo" src="images/logo.svg" alt="store logo" />
+      <div class="cart-btn">
+        <span class="nav-icon-cart">
+          <i class="fas fa-cart-plus"></i>
         </span>
-        <img id="logo" src="images/logo.svg" alt="store logo" />
-        <div class="cart-btn">
-          <span class="nav-icon-cart">
-            <i class="fas fa-cart-plus"></i>
-          </span>
-          <div class="cart-items">0</div>
-        </div>
-      </div>
-    </nav>
-    <!--Hero-->
- 
-    <!----Products-->
-    <section class="products">
-      
-        
-      
-      <div class="about">
-        <img src="images/groupgirls.jpg" alt="group of founder"/>
-        <img src="images/groupgirls2.jpg" alt="group of founder"/>
-        <img src="images/groupgirls3.jpg" alt="group of founder"/>
-      </div>
-      <div class="section-title"> <h2>Get to Know Us</h2></div>
-     
-      <div class="aboutus-area">
-
-      </div>
-    </section>
-    <div class="cart-overlay">
-      <div class="cart">
-        <span class="close-cart">
-          <i class="fa fa-window-close"></i>
-        </span>
-        <h2>Your Cart</h2>
-        <div class="cart-content">
-          
-        </div>
-        <div class="cart-footer">
-          <h3>Your Total : R <span class="cart-total">0</span></h3>
-          <button class="clear-cart banner-btn">Clear Cart</button>
-        </div>
+        <div class="cart-items">0</div>
       </div>
     </div>
-    
-    <form id="join-form" action="thankyou.html"  autocomplete="on">
-      <h2>Contact Us</h2>
-      <fieldset>
-        <label id="name-label">First Name <input id="firstname" type="text" title="Please enter firstname" name="firstname" placeholder="Enter your firstname" autocomplete="given-name" required/></label>
-        <label id="name-label">Last Name <input id="lastname" type="text" tabindex="Please enter lastname" name="lastname" placeholder="Enter your lastname" autocomplete="family-name" required/></label>
-        <label id="name-organization-title">Organational Title   <input 
-          placeholder="Enter Organizational title"
-          type="text" 
-          id="organization-title" 
-          name="organization-title" 
-          autocomplete="organization-title" 
-     
-          title="Please enter a valid organizational title with at least seven characters. Only alphabetic characters, hyphens, and spaces are allowed."
-          required
-      ></label>
-        <label id="email-label">Email <input id="email" type="email" name="email" title="Please enter email" placeholder="Enter your Email" required  autocomplete="email"/></label>
-        <label id="number-label">Phone <input id="phone" type="telephone" name="phone"
-        placeholder="Enter Phone number"
-        required autocomplete="mobile"/></label>
-        
-        <label id="organizationname">Name of Organization <input id="organization" type="text" name="organization" title="Please enter or organization name" placeholder="Enter organization name" autocomplete="organization"/></label>
-        
-      </fieldset>
-  
-        <fieldset>
-          <label for="organization-description">Organization Description:</label><br>
-          <textarea 
-              id="organizationdescription" 
-              name="organization-description" 
-              rows="4" 
-              cols="50" 
-              placeholder="Enter business/organization description here..."
-              required
-          ></textarea><br><br>
-          
-        
-          <input 
-              type="hidden" 
-              id="timestamp" 
-              name="timestamp" 
-              value=""
-          ><br><br>
-          
-          <input 
-          id="submitBtn"
-              type="submit" 
-              value="Contact Us"
-          >
-     </form>
+  </nav>
+  <!--Hero-->
+
+  <!----Products-->
+  <section class="products">
+
+
+
+    <div class="about">
+      <img src="images/groupgirls.jpg" alt="group of founder" />
+      <img src="images/groupgirls2.jpg" alt="group of founder" />
+      <img src="images/groupgirls3.jpg" alt="group of founder" />
+    </div>
+    <div class="section-title">
+      <h2>Get to Know Us</h2>
+    </div>
+
+    <div class="aboutus-area">
+
+    </div>
+  </section>
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fa fa-window-close"></i>
+      </span>
+      <h2>Your Cart</h2>
+      <div class="cart-content">
+
+      </div>
+      <div class="cart-footer">
+        <h3>Your Total : R <span class="cart-total">0</span></h3>
+        <button class="clear-cart banner-btn">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <form id="join-form" action="thankyou.html" autocomplete="on">
+    <h2>Contact Us</h2>
+    <fieldset>
+      <label id="name-label">First Name 
+        <input id="firstname" type="text" title="Please enter firstname" name="firstname" placeholder="Enter your firstname" autocomplete="given-name" required />
+      </label>
+      <label id="name-label">Last Name 
+        <input id="lastname" type="text" title="Please enter lastname" name="lastname" placeholder="Enter your lastname" autocomplete="family-name" required />
+      </label>
+      <label id="name-organization-title">Organizational Title 
+        <input placeholder="Enter Organizational title" type="text" id="organization-title" name="organization-title" autocomplete="organization-title" title="Please enter a valid organizational title with at least seven characters. Only alphabetic characters, hyphens, and spaces are allowed." required />
+      </label>
+      <label id="email-label">Email 
+        <input id="email" type="email" name="email" title="Please enter email" placeholder="Enter your Email" required autocomplete="email" />
+      </label>
+      <label id="number-label">Phone 
+        <input id="phone" type="tel" name="phone" placeholder="Enter Phone number" required autocomplete="tel" />
+      </label>
+      <label id="organizationname">Name of Organization 
+        <input id="organization" type="text" name="organization" title="Please enter organization name" placeholder="Enter organization name" autocomplete="organization" required />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="organization-description">Organization Description:</label><br>
+      <textarea id="organizationdescription" name="organization-description" rows="4" cols="50" placeholder="Enter business/organization description here..." required></textarea><br><br>
+      <input type="hidden" id="timestamp" name="timestamp" value=""><br>
+      <input id="submitBtn" type="submit" value="Contact Us">
+    </fieldset>
+  </form>
+
+
+
+  <div>
     <footer-component></footer-component>
-  </body>
+  </div>
+
+</body>
+
 </html>
