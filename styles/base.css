@@ -71,12 +71,13 @@ body {
   background: var(--primaryColor);
   padding: 0 5px;
   border-radius: 30%;
-  color: var(--mainWhite);
+  color: var(--mainBlack);
 }
 
 /*------------ End of nav bar----------------*/
+
 .hero {
-  min-height: calc(100vh - 60px);
+  min-height: calc(50vh - 20px);
   background: url("../images/product-1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -84,6 +85,7 @@ body {
 }
 
 .banner {
+width: 300px;
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
@@ -91,7 +93,7 @@ body {
 }
 
 .banner-title {
-  font-size: 3.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
@@ -193,7 +195,7 @@ body {
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: var(--mainBlack);
   text-align: center;
 }
 
@@ -307,3 +309,31 @@ body {
 }
 
 /* --------------- End of Cart ---------------- */
+/*---------------PickupPoints-----------------*/
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.card-content {
+  text-align: center;
+  margin:1rem 0;
+}
+/*about us*/
+.about:nth-child(2){
+  display: none;
+
+}
+.about>img{
+  height: 300px;
+}

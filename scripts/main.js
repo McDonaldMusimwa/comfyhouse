@@ -3,6 +3,8 @@ import Products from "./getproducts.mjs";
 import Storage from "./localStorage.mjs";
 import './header.js';
 import './footer.js';
+import { pickUpPoints } from "./pickuppoint.js";
+import { aboutUs } from "./aboutus.js";
 
 //variables
 const cartBtn = document.querySelector(".cart-btn");
@@ -42,7 +44,10 @@ class UI {
             <h4>R ${product.price}</h4>
           </article>`;
     });
-    productsInTheDOM.innerHTML = result;
+    if(productsInTheDOM){
+      productsInTheDOM.innerHTML = result;
+    }
+    
   }
 
   getBtnsBag() {
@@ -181,8 +186,8 @@ class UI {
           cartContent.removeChild(subtractunits.parentElement.parentElement);
           this.removeThisItem(parseInt(itemId));
         }
-       
-        
+
+
       }
     });
   }
@@ -236,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
   products
     .getProducts()
     .then((products) => {
-      ui.displayProducts(products);
+      ui?.displayProducts(products);
 
       Storage.saveProducts(products);
     })
@@ -246,3 +251,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 //console.log("Hello ");
+/* Banner Button*/
+const BannerBtn = document.querySelector('.banner-btn')
+BannerBtn.addEventListener("click", () => {
+  window.location.href = ("/")
+})
+
+/* pick up pointsa */
+const route = window.location.pathname;
+
+if (route == '/pickup-point.html') {
+  async function renderPickUpPoints() {
+
+    try {
+      const response = await fetch('data/pickuppoints.json');
+      const data = await response.json();
+
+      pickUpPoints(data)
+
+    } catch (error) {
+      error
+    }
+  }
+  renderPickUpPoints()
+}
+
+/* About us */
+const routeabout = window.location.pathname;
+
+if (route == '/aboutus.html') {
+  async function renderAboutUs() {
+
+    try {
+      const response = await fetch('data/aboutus.json');
+      const data = await response.json();
+     
+      aboutUs(data)
+
+    } catch (error) {
+      error
+    }
+  }
+  renderAboutUs()
+}
+
+

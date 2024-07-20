@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 60px);
+    background: url("product-1.6825b34f.jpg") center / cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .navbar-center {
+    padding: 0 1.5rem;
+  }
+
+  #logo {
+    width: 30%;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+  }
+
+  #Pickup-area {
+    grid-template-columns: 32% 32% 33.33%;
+    display: grid;
+  }
+
+  .about {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-items: center;
+    gap: 10px;
+    display: grid;
+  }
+
+  .about > img {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=index.246a1e4f.css.map */

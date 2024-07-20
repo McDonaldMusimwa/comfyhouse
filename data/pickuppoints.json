@@ -1,0 +1,66 @@
+[
+    {
+        "locationName": "Cape Town Central Pickup",
+        "city": "Cape Town",
+        "address": "123 Main St, Cape Town, 8001",
+        "directions": "Located in the heart of Cape Town, near Greenmarket Square.",
+        "picture": "images/citycenter.jpg",
+        "phone": "+27 21 123 4567"
+    },
+    {
+        "locationName": "V&A Waterfront Pickup",
+        "city": "Cape Town",
+        "address": "456 Harbour Rd, Cape Town, 8002",
+        "directions": "Next to the Two Oceans Aquarium.",
+        "picture": "images/mallside.jpg",
+        "phone": "+27 21 234 5678"
+    },
+    {
+        "locationName": "Table Mountain Pickup",
+        "city": "Cape Town",
+        "address": "789 Mountain Rd, Cape Town, 8003",
+        "directions": "At the base of the Table Mountain Cableway.",
+        "picture": "images/countryside.jpg",
+        "phone": "+27 21 345 6789"
+    },
+    {
+        "locationName": "Camps Bay Pickup",
+        "city": "Cape Town",
+        "address": "101 Beach Rd, Camps Bay, Cape Town, 8004",
+        "directions": "Opposite the Camps Bay Beach, near the lifeguard station.",
+        "picture": "images/beachside.jpg",
+        "phone": "+27 21 456 7890"
+    },
+    {
+        "locationName": "Sea Point Pickup",
+        "city": "Cape Town",
+        "address": "202 Promenade Rd, Sea Point, Cape Town, 8005",
+        "directions": "Along the Sea Point Promenade, near the pavilion.",
+        "picture": "images/sea-point.jpg",
+        "phone": "+27 21 567 8901"
+    },
+    {
+        "locationName": "Woodstock Pickup",
+        "city": "Cape Town",
+        "address": "303 Albert Rd, Woodstock, Cape Town, 8006",
+        "directions": "Next to the Old Biscuit Mill.",
+        "picture": "images/old-biscuit.jpg",
+        "phone": "+27 21 678 9012"
+    },
+    {
+        "locationName": "Sommerset Pickup",
+        "city": "Cape Town",
+        "address": "404 Rhodes Dr, Sommerset road, Cape Town, 8007",
+        "directions": "Near the entrance of Kirstenbosch National Botanical Garden.",
+        "picture": "images/Somerset-Mall.jpg",
+        "phone": "+27 21 789 0123"
+    },
+    {
+        "locationName": "Hout Bay Pickup",
+        "city": "Cape Town",
+        "address": "505 Harbour Rd, Hout Bay, Cape Town, 8008",
+        "directions": "Next to the Hout Bay Harbour Market.",
+        "picture": "images/hout-bay.jpg",
+        "phone": "+27 21 890 1234"
+    }
+]
